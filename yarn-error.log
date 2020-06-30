@@ -1,0 +1,76 @@
+Arguments: 
+  /Users/uguryilmazunified/.nvm/versions/node/v14.0.0/bin/node /usr/local/bin/yarn add @babel/preset-react -D
+
+PATH: 
+  /Users/uguryilmazunified/Desktop/complete-intro-to-react-v5/node_modules/.bin:/Users/uguryilmazunified/.config/yarn/link/node_modules/.bin:/Users/uguryilmazunified/Desktop/complete-intro-to-react-v5/node_modules/.bin:/Users/uguryilmazunified/.config/yarn/link/node_modules/.bin:/Users/uguryilmazunified/.nvm/versions/node/v14.0.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/uguryilmazunified/.nvm/versions/node/v14.0.0/bin/node_modules/npm/bin/node-gyp-bin:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/bin:/Users/uguryilmazunified/.pyenv/shims:/Users/uguryilmazunified/.nvm/versions/node/v14.0.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/bin:/Users/uguryilmazunified/.pyenv/shims:/Users/uguryilmazunified/.nvm/versions/node/v14.0.0/bin:/Users/uguryilmazunified/Documents/go/bin:/usr/local/Cellar/yarn/0.27.5:/usr/local/go/bin:/Users/uguryilmazunified/Documents/go/bin:/usr/local/Cellar/yarn/0.27.5
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  14.0.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "complete-intro-to-react-v5",
+    "version": "1.0.0",
+    "description": "the Complete Intro to React, v5",
+    "main": "src/App.js",
+    "dependencies": {
+      "@frontendmasters/pet": "^1.0.3",
+      "@reach/router": "^1.2.1",
+      "react": "^16.8.4",
+      "react-dom": "^16.8.4"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.4.3",
+      "@babel/plugin-proposal-class-properties": "^7.4.0",
+      "@babel/preset-env": "^7.4.3",
+      "@babel/preset-react": "^7.0.0",
+      "babel-eslint": "^10.0.1",
+      "cross-env": "^5.2.0",
+      "eslint": "^5.12.1",
+      "eslint-config-prettier": "^4.0.0",
+      "eslint-plugin-import": "^2.15.0",
+      "eslint-plugin-jsx-a11y": "^6.2.0",
+      "eslint-plugin-react": "^7.12.4",
+      "eslint-plugin-react-hooks": "^1.0.2",
+      "parcel-bundler": "^1.12.1",
+      "prettier": "^1.16.1"
+    },
+    "scripts": {
+      "clear-build-cache": "rm -rf .cache/ dist/",
+      "dev": "parcel src/index.html",
+      "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
+      "format": "prettier --write \"src/**/*.{js,jsx}\"",
+      "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Brian Holt <btholt+complete-intro-to-react@gmail.com>",
+    "license": "Apache-2.0",
+    "browserslist": [
+      "last 2 Chrome versions"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: write EPIPE
+      at WriteWrap.onWriteComplete [as oncomplete] (internal/stream_base_commons.js:92:16)
+      at handleWriteReq (internal/stream_base_commons.js:58:21)
+      at writeGeneric (internal/stream_base_commons.js:143:15)
+      at TLSSocket.Socket._writeGeneric (net.js:783:11)
+      at TLSSocket.Socket._write (net.js:795:8)
+      at doWrite (_stream_writable.js:385:12)
+      at clearBuffer (_stream_writable.js:540:7)
+      at TLSSocket.Writable.uncork (_stream_writable.js:325:7)
+      at ClientRequest._flushOutput (_http_outgoing.js:891:10)
+      at ClientRequest._flush (_http_outgoing.js:860:22)
